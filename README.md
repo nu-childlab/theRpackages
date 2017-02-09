@@ -3,14 +3,12 @@ cldl R packages for abstracting analyses and data visualization
 
 
 # cldl
-### functions
 
 ### TODO functions
 
 # quantm
-### functions 
-#### quantm_stats
-This function combines calls to quantm_resid and quantm_mm to run all stats on **1 factor (log and raw)**
+### quantm_stats
+1. This function combines calls to quantm_resid and quantm_mm to run all stats on **1 factor (log and raw)**
 
 ##### helper functions
 1. quantm_resid
