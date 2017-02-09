@@ -7,7 +7,7 @@
 #' @param by_proportion defaults to FALSE: ggplot by number of subjects, if TRUE, plots by proportion of subjects
 #' @param number_of_subjects default is NULL, value required if ggplotting by proportion
 #' @param include_random default is TRUE, includes "random" as hypothesis alternative, and chance defualts to 50\% [change this in calculateLikelihood fxn]
-#' @param start_from_levels default is TRUE, will combine levels and data files and create 'yeps' and then add randomYep column to data. if false, assumes this is already complete and yep columns already exist and analysis applied from that point
+#' @param levels default is NULL, if !NULL it is a dataframe/csv with levels (hypothesis-predictions). function will combine levels and data files and create 'yeps' and then add randomYep column to data. else, assumes this is already complete and yep columns already exist and analysis applied from that point
 #' 
 #' @return returns 'kdata' containing the k values, 'data3' containing summary and winner, 'data4' which collapses by block, 'data4.long' which melts to long format for graphing, and the Bayes plot 
 #' @keywords Bayes Likelihood Kvalue 

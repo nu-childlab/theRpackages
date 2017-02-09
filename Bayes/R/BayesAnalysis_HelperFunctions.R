@@ -1,6 +1,6 @@
 #' A CLDL Function
 #'
-#' This function applies our Bayes Analysis to data (in YepFormat)
+#' This function generates data in "Yep format": compares the hypothesis-predictions in the levels file to subject responses and writes "yep" columns to data to indicate if response was hypothesis-consistent
 #' @param df the dataframe
 #' @param levels the csv containing levels (must contain "[hypothesis]px" column for every hypothesis)
 #' @param hypotheses a list of the hypotheses (must each have a "px" column in the levels file)
