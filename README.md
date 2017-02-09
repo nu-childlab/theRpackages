@@ -22,13 +22,13 @@ then call cldl functions as you would any other
 
 # Packages
 
-* cldl package (see CLDL_Package.md)
+### cldl package (see CLDL_Package.md)
     * assorted commonly-used (generally applicable) functions for transforming dataframes, quick analysis things, etc. 
-* quantm package (see QUANTM_Package.md)
+### quantm package (see QUANTM_Package.md)
     * quantm analysis abstractions
         * quantm stats
         * TODO: quantm graphing
-* Bayes package (see BAYES_Package.md)
+### Bayes package (see BAYES_Package.md)
     * apply the complete Bayes analysis (from EVENTS and LGS)
         * functions to quickly calculate likelihoods for 1 factor or *multiple factors* 
         * functions to quickly calculate K-values for 1 factor or *multiple factors*
