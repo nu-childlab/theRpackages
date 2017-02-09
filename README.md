@@ -1,6 +1,24 @@
 # theRpackages
 cldl R packages for abstracting analyses and data visualization
 
+# To install packages
+enter these commands in RStudio: 
+
+    # uncomment install line if you haven't installed before: 
+    # install.packages("devtools")
+    library("devtools")
+    # replace filepath with path to parent directory of the package directory (inside the quotes)
+    setwd("FILEPATH_HERE") 
+    # replace packagename with the name of the package (directory name). e.g. cldl, Bayes, or quantm. 
+    install("PACKAGENAME_HERE") 
+    
+once installed initially (and after any updates), when using R can load as normal library 
+    
+    library(cldl)
+    
+then call cldl functions as you would any other
+
+====
 
 # cldl package
 ### multimerge_vertical_csv
