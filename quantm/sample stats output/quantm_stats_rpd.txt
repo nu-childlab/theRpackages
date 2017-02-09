@@ -1,0 +1,170 @@
+
+
+
+[1] "LMER: M0"
+lmer(formula = get(measure) ~ subjCode * objCode + ((1 | subject) + 
+    (0 + subjCode | subject) + (0 + objCode | subject) + (0 + 
+    subjCode:objCode | subject)) + ((1 | item) + (0 + subjCode | 
+    item) + (0 + objCode | item) + (0 + subjCode:objCode | item)), 
+    data = sdata, REML = FALSE, control = lmerControl(optimizer = "bobyqa"))
+                 coef.est coef.se
+(Intercept)      -0.35     0.04  
+subjCode         -0.02     0.05  
+objCode           0.10     0.05  
+subjCode:objCode  0.02     0.09  
+
+Error terms:
+ Groups    Name             Std.Dev.
+ subject   (Intercept)      0.17    
+ subject.1 subjCode         0.00    
+ subject.2 objCode          0.00    
+ subject.3 subjCode:objCode 0.00    
+ item      (Intercept)      0.03    
+ item.1    subjCode         0.00    
+ item.2    objCode          0.06    
+ item.3    subjCode:objCode 0.00    
+ Residual                   0.72    
+---
+number of obs: 988, groups: subject, 37; item, 28
+AIC = 2229.2, DIC = 2203.2
+deviance = 2203.2 
+
+
+
+[1] "LMER: M1"
+lmer(formula = get(measure) ~ subjCode * objCode + ((1 | subject) + 
+    (0 + subjCode | subject) + (0 + objCode | subject) + (0 + 
+    subjCode:objCode | subject)) + ((1 | item) + (0 + subjCode | 
+    item) + (0 + objCode | item) + (0 + subjCode:objCode | item)), 
+    data = sdata, REML = FALSE, control = lmerControl(optimizer = "bobyqa"))
+                 coef.est coef.se
+(Intercept)      -0.21     0.06  
+subjCode         -0.10     0.05  
+objCode           0.08     0.05  
+subjCode:objCode -0.14     0.11  
+
+Error terms:
+ Groups    Name             Std.Dev.
+ subject   (Intercept)      0.30    
+ subject.1 subjCode         0.05    
+ subject.2 objCode          0.00    
+ subject.3 subjCode:objCode 0.00    
+ item      (Intercept)      0.05    
+ item.1    subjCode         0.02    
+ item.2    objCode          0.00    
+ item.3    subjCode:objCode 0.23    
+ Residual                   1.01    
+---
+number of obs: 1755, groups: subject, 37; item, 28
+AIC = 5113.6, DIC = 5087.6
+deviance = 5087.6 
+
+
+
+[1] "LMER: M2"
+lmer(formula = get(measure) ~ subjCode * objCode + ((1 | subject) + 
+    (0 + subjCode | subject) + (0 + objCode | subject) + (0 + 
+    subjCode:objCode | subject)) + ((1 | item) + (0 + subjCode | 
+    item) + (0 + objCode | item) + (0 + subjCode:objCode | item)), 
+    data = sdata, REML = FALSE, control = lmerControl(optimizer = "bobyqa"))
+                 coef.est coef.se
+(Intercept)       0.21     0.05  
+subjCode         -0.08     0.04  
+objCode          -0.01     0.04  
+subjCode:objCode  0.07     0.10  
+
+Error terms:
+ Groups    Name             Std.Dev.
+ subject   (Intercept)      0.25    
+ subject.1 subjCode         0.00    
+ subject.2 objCode          0.04    
+ subject.3 subjCode:objCode 0.36    
+ item      (Intercept)      0.12    
+ item.1    subjCode         0.08    
+ item.2    objCode          0.04    
+ item.3    subjCode:objCode 0.00    
+ Residual                   0.90    
+---
+number of obs: 1972, groups: subject, 37; item, 28
+AIC = 5301.1, DIC = 5275.1
+deviance = 5275.1 
+
+
+
+[1] "ANOVA: M0"
+                                  Chisq Chi Df Pr(>Chisq)
+update(get(m), . ~ . - subjCode)                         
+get(m)                           0.2138      1     0.6438
+                                 Chisq Chi Df Pr(>Chisq)  
+update(get(m), . ~ . - objCode)                           
+get(m)                          3.6761      1     0.0552 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                                          Chisq Chi Df Pr(>Chisq)
+update(get(m), . ~ . - subjCode:objCode)                         
+get(m)                                   0.0269      1     0.8697
+
+
+
+[1] "ANOVA: M1"
+                                  Chisq Chi Df Pr(>Chisq)  
+update(get(m), . ~ . - subjCode)                           
+get(m)                           3.7407      1     0.0531 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                                 Chisq Chi Df Pr(>Chisq)  
+update(get(m), . ~ . - objCode)                           
+get(m)                          2.9897      1    0.08379 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                                          Chisq Chi Df Pr(>Chisq)
+update(get(m), . ~ . - subjCode:objCode)                         
+get(m)                                   1.7484      1     0.1861
+
+
+
+[1] "ANOVA: M2"
+                                  Chisq Chi Df Pr(>Chisq)  
+update(get(m), . ~ . - subjCode)                           
+get(m)                           2.8434      1    0.09175 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                                 Chisq Chi Df Pr(>Chisq)
+update(get(m), . ~ . - objCode)                         
+get(m)                          0.0728      1     0.7873
+                                          Chisq Chi Df Pr(>Chisq)
+update(get(m), . ~ . - subjCode:objCode)                         
+get(m)                                   0.4306      1     0.5117
+
+
+
+[1] "MEANS FOR SPILL= 0"
+existential        name 
+      -0.35       -0.37 
+demonstrative     universal 
+        -0.30         -0.41 
+            demonstrative universal
+existential         -0.29     -0.40
+name                -0.31     -0.41
+
+
+
+[1] "MEANS FOR SPILL= 1"
+existential        name 
+      -0.19       -0.29 
+demonstrative     universal 
+        -0.20         -0.28 
+            demonstrative universal
+existential         -0.12     -0.25
+name                -0.28     -0.30
+
+
+
+[1] "MEANS FOR SPILL= 2"
+existential        name 
+       0.21        0.14 
+demonstrative     universal 
+         0.17          0.18 
+            demonstrative universal
+existential          0.19      0.23
+name                 0.15      0.12
