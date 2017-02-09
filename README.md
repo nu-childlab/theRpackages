@@ -40,3 +40,16 @@ then call cldl functions as you would any other
 * how to make a package.R
   * instructions for making your own package 
   * see also, theRpackage tutorial 
+  
+====
+
+# TODO Packages: 
+* PREFERENCE (Telic)
+    * make TELIC graph code more general
+    * ggsave store plots into 'plots' folder and transformed data into 'transformed data' folder
+    * can stats R outputs be saved/exported directly instead of copy-pasted into file? (results are bound into a summary file and we can *print* it all but instead would like it to save to aux file)
+* LME (GLEEBEST 2)
+    * recreate LME 
+    * abstract 
+    * try with LGS3 for more difficult example
+
