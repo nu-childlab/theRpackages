@@ -13,3 +13,10 @@
 
 ### TODO functions
 
+1. function for cldl's standard/agreed upon **graph-formatting**
+  * easiliy add to bar or line plot 
+  * check out AW illusions analysis (2 functions noted for CC)
+* function to add **error bars** to plot
+  * also: AW comparing cldl's current error bar fxn and one used preivously to see if any differences and which one better. 
+* function that **concatenates files and splits based on trial type** (survey, scale, etc.)
+  * see RW Illusions code
