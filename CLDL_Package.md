@@ -1,7 +1,9 @@
 # cldl package
 ### multimerge_vertical_csv
 1. This function vertically combines all csvs in a directory (if columns match) 
-   *and optionally exports the complete dataset to csv on your machine
+   * saves dataframe to global environment 
+   * saves .csv to a 'data_datestamp' folder (locates or creates) in your current working directory
+
 
 ### reshape_long
 1. This function quickly reshapes dataframe from wide (1 subject per line) to long format (1 variable/value per line)
