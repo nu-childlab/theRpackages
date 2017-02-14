@@ -2,7 +2,7 @@
 ### multimerge_vertical_csv
 1. This function vertically combines all csvs in a directory (if columns match) 
    * saves dataframe to global environment 
-   * saves .csv to a 'data_datestamp' folder (locates or creates) in your current working directory
+   * saves .csv to a 'data_datestamp' folder (locates or creates) in the parent directory of the original directory
 
 
 ### reshape_long
