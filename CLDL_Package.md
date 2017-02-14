@@ -12,7 +12,8 @@
    * else, correct <- **0**
 
 ### error_bars
-1. This function adds error bars to a ggplot using the summarySE function 
+1. This function adds error bars to a ggplot 
+  * using the summarySE function from Cookbook for R (found here: http://www.cookbook-r.com/Manipulating_data/Summarizing_data/)
   * returns new plot to global environment and saves it as .png to a plots directory (it creates new or locates existing) in current wd
     * setwd() to relevant location before calling
 
