@@ -11,6 +11,11 @@
    * correct <- **1** if the two columns match values for that row
    * else, correct <- **0**
 
+### error_bars
+1. This function adds error bars to a ggplot using the summarySE function 
+  * returns new plot to global environment and saves it as .png to a plots directory (it creates new or locates existing) in current wd
+    * setwd() to relevant location before calling
+
 ### TODO functions
 
 1. function for cldl's standard/agreed upon **graph-formatting**
