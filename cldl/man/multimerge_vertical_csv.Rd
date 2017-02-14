@@ -8,17 +8,15 @@ multimerge_vertical_csv(folder_path, export_path = NULL)
 }
 \arguments{
 \item{folder_path}{path to folder containing individual datasets}
-
-\item{export_path}{= NULL optional path/filename if you want to export the complete csv to that location}
 }
 \value{
 returns complete dataset to global environment
 }
 \description{
-This function vertically combines multiple csv datasets and optionally exports the complete dataset to csv on your machine
+This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
 }
 \examples{
-multimerge_vertical_csv("/Users/cec804/Desktop/themostData_6-29-16", "/Users/cec804/Desktop/themost_completeData_6-29-16.csv")
+multimerge_vertical_csv("/Users/cec804/Desktop/themostData_6-29-16")
 multimerge_vertical_csv("/Users/caseycolby/Desktop/themostData_6-29-16")
 
 }
