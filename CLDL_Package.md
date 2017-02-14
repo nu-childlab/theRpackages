@@ -1,7 +1,9 @@
 # cldl package
 ### multimerge_vertical_csv
 1. This function vertically combines all csvs in a directory (if columns match) 
-   *and optionally exports the complete dataset to csv on your machine
+   * saves dataframe to global environment 
+   * saves .csv to a 'data_datestamp' folder (locates or creates) in your current working directory
+
 
 ### reshape_long
 1. This function quickly reshapes dataframe from wide (1 subject per line) to long format (1 variable/value per line)
@@ -12,7 +14,8 @@
    * else, correct <- **0**
 
 ### error_bars
-1. This function adds error bars to a ggplot using the summarySE function 
+1. This function adds error bars to a ggplot 
+  * using the summarySE function from Cookbook for R (found here: http://www.cookbook-r.com/Manipulating_data/Summarizing_data/)
   * returns new plot to global environment and saves it as .png to a plots directory (it creates new or locates existing) in current wd
     * setwd() to relevant location before calling
 
@@ -21,7 +24,5 @@
 1. function for cldl's standard/agreed upon **graph-formatting**
   * easiliy add to bar or line plot 
   * check out AW illusions analysis (2 functions noted for CC)
-* function to add **error bars** to plot
-  * also: AW comparing cldl's current error bar fxn and one used preivously to see if any differences and which one better. 
 * function that **concatenates files and splits based on trial type** (survey, scale, etc.)
   * see RW Illusions code
