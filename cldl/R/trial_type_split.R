@@ -2,9 +2,9 @@
 #'
 #' This function splits a dataframe or csv by trial_type and outputs separate dataframes/csvs according to type
 #' @param df a dataframe in the global environment, or a filepath (string) to a csv 
-#' @param type_list specify a list of trial_type values (as strings) to ouput separate csvs/dataframes for, or leave default; default is set to c("text", "single-"stim", "survey-text")
-#' @return returns dataframes corresponding to each specified trial_type (1) to global environment (2) writes .csvs to working directory
-#' @keywords split separate survey trial_type type
+#' @param type_list specifies a list of trial_type values (as strings) to split/output datasets by; or defaults to c("text", "single-"stim", "survey-text")
+#' @return  (1) writes .csvs to Data_preprocessed directory (creates or locates) for the datasets split by trial_type (2) returns those dataframes to the global environment 
+#' @keywords split post-processing trial_type type survey
 #'
 #' @examples 
 #' trial_type_split(data)

@@ -1,9 +1,9 @@
 #' A CLDL Function
 #'
 #' This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
-#' @param folder_path path to folder containing individual datasets
-#' @return returns complete dataset to global environment
-#' @keywords merge concatenate csv combine
+#' @param folder_path path to folder containing individual .csv files, requires they have the same columns
+#' @return returns complete dataset to global environment and concatenated/raw csvs to 'Data_preprocessed' directory (created/found in parent dir of folder_path)
+#' @keywords merge concatenate csv combine post-processing
 #'
 #' @examples 
 #' multimerge_vertical_csv("/Users/cec804/Desktop/themostData_6-29-16")
@@ -27,7 +27,7 @@
    
    # save the combined dataset to workspace
    completedata <- combine(folder_path)
-   assign("data_concat", completedata, .GlobalEnv)
+   assign("totalData", completedata, .GlobalEnv)
    
    
    #===exporting csv and setting up directory structure====
