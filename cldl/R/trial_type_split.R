@@ -1,6 +1,6 @@
 #' A CLDL Function
 #'
-#' This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
+#' This function splits a dataframe or csv by trial_type and outputs separate dataframes/csvs according to type
 #' @param df a dataframe in the global environment, or a filepath (string) to a csv 
 #' @param type_list specify a list of trial_type values (as strings) to ouput separate csvs/dataframes for, or leave default; default is set to c("text", "single-"stim", "survey-text")
 #' @return returns dataframes corresponding to each specified trial_type (1) to global environment (2) writes .csvs to working directory

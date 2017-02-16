@@ -15,7 +15,7 @@ trial_type_split(df, type_list = c("text", "single-stim", "survey-text"))
 returns dataframes corresponding to each specified trial_type (1) to global environment (2) writes .csvs to working directory
 }
 \description{
-This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
+This function splits a dataframe or csv by trial_type and outputs separate dataframes/csvs according to type
 }
 \examples{
 trial_type_split(data)
