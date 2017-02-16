@@ -12,7 +12,7 @@
 #' @export
 
 
- multimerge_vertical_csv <- function(folder_path, export_path = NULL) {
+ multimerge_vertical_csv <- function(folder_path) {
    
    combine <- function(folder_path) {
     # create list of data frame filenames
@@ -36,7 +36,7 @@
    setwd(dirname(folder_path))
    # create or locate 'data' directory structure in the pwd
    currDir <- getwd()
-   subDir <- paste("data", Sys.Date(), sep="_")
+   subDir <- "data_processed"
    dir.create(file.path(currDir, subDir), showWarnings = FALSE) # create data dir if !exists
    # create sub directories for rawData (individual csvs) and concatenated data (1 csv)
    subDir_raw <- "raw_csvs"
@@ -48,7 +48,7 @@
    filepath_concat <- paste(currDir, subDir, sep="/")
    # add filename to the end of filepath_concat so it's proper write.csv export path
       # create datestamped name for concatenated data csv and add csv extension
-      concatName <- paste("complete-data", Sys.Date(), sep="_")
+      concatName <- paste("totalData", Sys.Date(), sep="_")
       concatName <- paste0(concatName,".csv")
    filepath_concat <- paste(filepath_concat,concatName,sep="/")
    
