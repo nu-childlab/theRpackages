@@ -4,7 +4,7 @@
 \alias{multimerge_vertical_csv}
 \title{A CLDL Function}
 \usage{
-multimerge_vertical_csv(folder_path, export_path = NULL)
+multimerge_vertical_csv(folder_path)
 }
 \arguments{
 \item{folder_path}{path to folder containing individual datasets}
@@ -20,5 +20,8 @@ multimerge_vertical_csv("/Users/cec804/Desktop/themostData_6-29-16")
 multimerge_vertical_csv("/Users/caseycolby/Desktop/themostData_6-29-16")
 
 }
+\keyword{combine}
+\keyword{concatenate}
+\keyword{csv}
 \keyword{merge}
 
