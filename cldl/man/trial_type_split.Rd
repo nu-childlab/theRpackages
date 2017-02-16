@@ -9,10 +9,10 @@ trial_type_split(df, type_list = c("text", "single-stim", "survey-text"))
 \arguments{
 \item{df}{a dataframe in the global environment, or a filepath (string) to a csv}
 
-\item{type_list}{specify a list of trial_type values (as strings) to ouput separate csvs/dataframes for, or leave default; default is set to c("text", "single-"stim", "survey-text")}
+\item{type_list}{specifies a list of trial_type values (as strings) to split/output datasets by; or defaults to c("text", "single-"stim", "survey-text")}
 }
 \value{
-returns dataframes corresponding to each specified trial_type (1) to global environment (2) writes .csvs to working directory
+(1) writes .csvs to Data_preprocessed directory (creates or locates) for the datasets split by trial_type (2) returns those dataframes to the global environment
 }
 \description{
 This function splits a dataframe or csv by trial_type and outputs separate dataframes/csvs according to type
@@ -24,7 +24,7 @@ trial_type_split(data2, c("text", "single-stim"))
 trial_type_split(dataIllu, c("survey-text", "survey-likert"))
 
 }
-\keyword{separate}
+\keyword{post-processing}
 \keyword{split}
 \keyword{survey}
 \keyword{trial_type}

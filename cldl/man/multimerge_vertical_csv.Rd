@@ -7,10 +7,10 @@
 multimerge_vertical_csv(folder_path)
 }
 \arguments{
-\item{folder_path}{path to folder containing individual datasets}
+\item{folder_path}{path to folder containing individual .csv files, requires they have the same columns}
 }
 \value{
-returns complete dataset to global environment
+returns complete dataset to global environment and concatenated/raw csvs to 'Data_preprocessed' directory (created/found in parent dir of folder_path)
 }
 \description{
 This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
@@ -24,4 +24,5 @@ multimerge_vertical_csv("/Users/caseycolby/Desktop/themostData_6-29-16")
 \keyword{concatenate}
 \keyword{csv}
 \keyword{merge}
+\keyword{post-processing}
 

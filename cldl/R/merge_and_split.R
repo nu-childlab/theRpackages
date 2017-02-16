@@ -7,11 +7,9 @@
 #' @keywords merge concatenate split separate survey trial_type type post-processing
 #'
 #' @examples 
-#' trial_type_split(data)
-#' trial_type_split("~/Desktop/totalData.csv")
-#' trial_type_split(data2, c("text", "single-stim"))
-#' trial_type_split(dataIllu, c("survey-text", "survey-likert"))
-#'
+#' merge_and_split("~/Desktop/lgs2est")
+#' merge_and_split("~/Desktop/lgs2est", c("survey-text", "single-stim"))
+#' 
 #' @export
 
 merge_and_split <- function(folder_path, type_list = c("text", "single-stim", "survey-text")) {
@@ -20,5 +18,3 @@ merge_and_split <- function(folder_path, type_list = c("text", "single-stim", "s
   # returns totalData to .GlobalEnv
   cldl::trial_type_split(totalData,type_list)
 }
-
-merge_and_split("~/Desktop/lgs2est")
