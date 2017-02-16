@@ -3,7 +3,7 @@
 #' This function vertically combines multiple csv datasets and saves dataframe to global environment and a csv to a 'data' folder in your current working directory
 #' @param folder_path path to folder containing individual datasets
 #' @return returns complete dataset to global environment
-#' @keywords merge 
+#' @keywords merge concatenate csv combine
 #'
 #' @examples 
 #' multimerge_vertical_csv("/Users/cec804/Desktop/themostData_6-29-16")
