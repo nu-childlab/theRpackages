@@ -14,13 +14,13 @@ BayesAnalysis(data, hypotheses, list_id_vars, proportion = FALSE,
 
 \item{number_of_subjects}{default is NULL, value required if ggplotting by proportion}
 
+\item{levels}{default is NULL, if !NULL it is a dataframe/csv with levels (hypothesis-predictions). function will combine levels and data files and create 'yeps' and then add randomYep column to data. else, assumes this is already complete and yep columns already exist and analysis applied from that point}
+
 \item{df}{the dataframe, must contain [hypothesis]Yep columns to indicate if response was consistent with each hypothesis. Be sure to include "randomYep" colunn if you want chance (default 50\%) as a hypothesis alternative.}
 
 \item{by_proportion}{defaults to FALSE: ggplot by number of subjects, if TRUE, plots by proportion of subjects}
 
 \item{include_random}{default is TRUE, includes "random" as hypothesis alternative, and chance defualts to 50\% [change this in calculateLikelihood fxn]}
-
-\item{start_from_levels}{default is TRUE, will combine levels and data files and create 'yeps' and then add randomYep column to data. if false, assumes this is already complete and yep columns already exist and analysis applied from that point}
 }
 \value{
 returns 'kdata' containing the k values, 'data3' containing summary and winner, 'data4' which collapses by block, 'data4.long' which melts to long format for graphing, and the Bayes plot

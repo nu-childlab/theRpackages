@@ -1,5 +1,5 @@
 Package: quantm
-Title: Abstracts CLDL quantm statstics and graphing 
+Title: CLDL Quantm Statstics and Graphing 
 Version: 0.0.0.9000
 Authors@R: person("Casey", "Colby", email = "casey.colby@northwestern.edu", role = c("aut", "cre"))
 Description: What the package does (one paragraph).

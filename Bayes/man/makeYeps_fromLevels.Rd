@@ -17,7 +17,7 @@ makeYeps_fromLevels(df, levels, hypotheses)
 returns 'data' dataframe to Global Env., containing the Yep value columns (value "correct" by hypothesis)
 }
 \description{
-This function applies our Bayes Analysis to data (in YepFormat)
+This function generates data in "Yep format": compares the hypothesis-predictions in the levels file to subject responses and writes "yep" columns to data to indicate if response was hypothesis-consistent
 }
 \examples{
 makeYeps_fromLevels(data, levels, hyps)
