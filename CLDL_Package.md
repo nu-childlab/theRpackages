@@ -32,6 +32,13 @@
   * **parameter 1**: a dataframe in the global environment or a filepath to a .csv on your machine 
   * **parameter 2**: a list of values for "trial_type" to split upon. 
     * if you leave this parameter empty, **defaults to c("text", "single-stim", "survey-text")**
+    
+### parse_json_survey_data
+1. This function parses json objects stored in one dataframe column (e.g. JsPsych survey data)
+  * **parameter 1**: a dataframe in the global environment 
+  * **parameter 2**: the name (as string) of the dataframe column to be parsed (contains a json object in each cell
+    * e.g. the "responses" column for JsPsych survey data
+  
   
 ### TODO functions
 
