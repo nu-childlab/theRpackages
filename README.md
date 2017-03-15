@@ -4,6 +4,7 @@ cldl R packages for abstracting analyses and data visualization
 # To install packages
 enter these commands in RStudio: 
 
+    Installing from a local directory (e.g. you downloaded the package files first):
     # uncomment install line if you haven't installed before: 
     # install.packages("devtools")
     library("devtools")
@@ -12,11 +13,17 @@ enter these commands in RStudio:
     # replace packagename with the name of the package (directory name). e.g. cldl, Bayes, or quantm. 
     install("PACKAGENAME_HERE") 
     
+    Installing from GitHub: 
+    # uncomment install line if you haven't installed before: 
+    # install.packages("devtools")
+    library("devtools")
+    install_github("nu-childlab/theRpackages/NAME_OF_PACKAGE_HERE")
+    
 once installed initially (and after any updates), when using R can load as normal library 
     
     library(cldl)
     
-then call cldl functions as you would any other
+then call cldl (or other package) functions as you would any other
 
 ====
 
