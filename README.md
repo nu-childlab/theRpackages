@@ -1,24 +1,27 @@
 # theRpackages
 cldl R packages for abstracting analyses and data visualization
 
-# To install packages
+## To install packages
 enter these commands in RStudio: 
 
-    Installing from a local directory (e.g. you downloaded the package files first):
-    # uncomment install line if you haven't installed before: 
-    # install.packages("devtools")
-    library("devtools")
-    # replace filepath with path to parent directory of the package directory (inside the quotes)
-    setwd("FILEPATH_HERE") 
-    # replace packagename with the name of the package (directory name). e.g. cldl, Bayes, or quantm. 
-    install("PACKAGENAME_HERE") 
+#### Installing from GitHub (easiest, production): 
+* uncomment install line if you haven't installed before
+```
+#install.packages("devtools")
+library("devtools")
+install_github("nu-childlab/theRpackages/NAME_OF_PACKAGE_HERE")
+```
     
-    Installing from GitHub: 
-    # uncomment install line if you haven't installed before: 
-    # install.packages("devtools")
-    library("devtools")
-    install_github("nu-childlab/theRpackages/NAME_OF_PACKAGE_HERE")
-    
+#### Installing from a local directory (development):
+* uncomment install line if you haven't installed before
+* replace filepath with path to parent directory of the package directory (inside the quotes)
+* replace packagename with the name of the package (directory name). e.g. cldl, Bayes, or quantm. 
+```
+#install.packages("devtools")
+library("devtools")
+setwd("FILEPATH_HERE") 
+install("PACKAGENAME_HERE") 
+```
 once installed initially (and after any updates), when using R can load as normal library 
     
     library(cldl)
